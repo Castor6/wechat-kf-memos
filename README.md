@@ -9,6 +9,8 @@
 
 ## 项目资料
 
+- [文档与协作入口](docs/README.md)、[任务索引](docs/tasks/INDEX.md)：按主题查需求、决策和工作事实。
+
 - [开通与接入流程](docs/onboarding.md)：未认证账号、企业 ID、HTTPS 回调、本人绑定。
 - [需求与决策](docs/requirements.md)：本次讨论确定的产品行为与不做的事情。
 - [定制 Memos 接口](docs/memos-contract.md)：个人空间、独立标签、笔记与附件。
