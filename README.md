@@ -11,7 +11,7 @@
 
 2026-09-19 用户决定将客服能力迁为定制 Memos 的 Go 内置模块，统一代码、Task、镜像和版本。`~/Code/memos` 是后续主开发位置，迁移方案见该项目 `docs/wechat-kf-integration.md`；本仓库保留 Python 0.1.2、产品规则与测试作为迁移参照及切换前维护入口。[迁移说明](docs/migration-to-memos.md)
 
-Go 核心的实施与验证记录归入 Memos 主任务；本仓库此次只调整移交文档，没有切换运行服务。下文部署和接口说明仍描述现有 Python 实现。
+Go 内置模块、管理员设置、持久化队列及旧状态导入的实施与验证记录归入 [Memos 主任务](https://github.com/Castor6/memos/blob/docs/wechat-kf-linked-development/docs/tasks/TASK-20260919-wechat-kf-integration.md)。开通流程、需求和历史任务也已复制归档到 Memos 的 `docs/wechat-kf/legacy`。下文部署和接口说明只描述 Python 0.1.2 历史实现；当前使用入口为 [Memos 内置说明](https://github.com/Castor6/memos/blob/docs/wechat-kf-linked-development/docs/wechat-kf-integration.md)。实际生产切换记录在私有运维目录。
 
 ## 项目资料
 
