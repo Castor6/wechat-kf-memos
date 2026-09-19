@@ -1,5 +1,7 @@
 # 定制版 Memos 接口约定
 
+本文记录 Python 0.1.2 通过 HTTP API 对接 Memos 的现有方式。已选内置方案将复用 Memos 业务逻辑；本文作为行为与迁移参照，不要求内置模块继续用 PAT 请求自身接口。见[移交说明](migration-to-memos.md)。
+
 目标为个人版 Memos 0.2.0（官方 0.30.0 源码基线），已核对定制 memo_service.proto、memo_service.go、personal_space.go 的实现。本机临时合约测试及生产文字/聊天记录回读已验证相关行为；不能据此宣称任意上游版本兼容。
 
 | 操作 | 请求与约定 |
