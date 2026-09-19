@@ -1,0 +1,11 @@
+# Include in a separately reviewed callback server block.
+# HTTPS IP callbacks passed a real independent-KF verification on 2026-09-19.
+# Include inside the existing HTTPS server; no HTTP port 80 is needed.
+# Do not replace the existing Memos TLS configuration.
+location = /wechat/callback {
+    client_max_body_size 1m;
+    access_log off; # callback query contains signed encrypted material
+    proxy_pass http://127.0.0.1:8080;
+    proxy_connect_timeout 2s;
+    proxy_read_timeout 5s;
+}
