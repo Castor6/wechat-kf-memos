@@ -7,7 +7,15 @@
 
 2026-09-19 已部署 systemd 服务，开启本人白名单、独立标签和最终结果回执。未认证账号的 HTTPS 公网 IP 回调、真实文字及聊天记录保存、私有可见性和一次结果回执已验证。真实媒体与各类卡片仍需逐项验收。早期临时探针停用是历史阶段，当前正式服务已经启用。
 
+## 已选后续方向：内置到 Memos
+
+2026-09-19 用户决定将客服能力迁为定制 Memos 的 Go 内置模块，统一代码、Task、镜像和版本。`~/Code/memos` 是后续主开发位置，迁移方案见该项目 `docs/wechat-kf-integration.md`；本仓库保留 Python 0.1.2、产品规则与测试作为迁移参照及切换前维护入口。[迁移说明](docs/migration-to-memos.md)
+
+Go 内置模块、管理员设置、持久化队列及旧状态导入的实施与验证记录归入 [Memos 主任务](https://github.com/Castor6/memos/blob/docs/wechat-kf-linked-development/docs/tasks/TASK-20260919-wechat-kf-integration.md)。开通流程、需求和历史任务也已复制归档到 Memos 的 `docs/wechat-kf/legacy`。下文部署和接口说明只描述 Python 0.1.2 历史实现；当前使用入口为 [Memos 内置说明](https://github.com/Castor6/memos/blob/docs/wechat-kf-linked-development/docs/wechat-kf-integration.md)。实际生产切换记录在私有运维目录。
+
 ## 项目资料
+
+- [文档与协作入口](docs/README.md)、[任务索引](docs/tasks/INDEX.md)：按主题查需求、决策和工作事实。
 
 - [开通与接入流程](docs/onboarding.md)：未认证账号、企业 ID、HTTPS 回调、本人绑定。
 - [需求与决策](docs/requirements.md)：本次讨论确定的产品行为与不做的事情。
